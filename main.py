@@ -24,8 +24,10 @@ if __name__ == "__main__":
                         type=str,
                         choices=news_sites_choices)
         
+        
     args = parser.parse_args()
     _news_scraper(args.news_site)
+
 
 
 

@@ -40,4 +40,4 @@ class HomePage:
     
         response.raise_for_status()
 
-        self._html = bs4,BeautifulSoup(respose.text, 'html.parser')
+        self._html = base64,BeautifulSoup(respose.text, 'html.parser')
