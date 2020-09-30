@@ -35,7 +35,7 @@ class HomePage:
 
 
 
-    def _visit(self, url)
+    def _visit(self, url):
         response = requests.get(url)
     
         response.raise_for_status()
