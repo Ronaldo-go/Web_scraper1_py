@@ -1,11 +1,11 @@
-import base64
+import base64 
 import requests
 
 from common import config
 
 class HomePage:
 
-    def __init_(self, news_site_uid, url):
+    def __init__(self, news_site_uid, url):
         self._config = config()['news_sites'][news_site_uid]
         self._queries = self._config['queries']
         self._html = None
@@ -35,7 +35,7 @@ class HomePage:
 
 
 
-    def _visit(self, url)
+    def _visit(self, url):
         response = requests.get(url)
     
         response.raise_for_status()

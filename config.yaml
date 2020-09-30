@@ -6,6 +6,5 @@ news_sites:
   elpais:
     url: https://elpais.com
     queries:
-      homepage_article_links: '.headline a'
-      
-    
+    homepage_article_links: '.headline a'
+     
