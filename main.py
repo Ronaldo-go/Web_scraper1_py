@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 def _news_scraper(news_site_uid):
     host = config()['news_sites'][news_site_uid]['url']
 
-    logging.info(f'Beginning scraper for {host}')
+    logging.info(f'Beginning scrape for {host}')
     homepage = news.HomePage(news_site_uid, host)
 
     for link in homepage.article_links:
